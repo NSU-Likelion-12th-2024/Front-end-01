@@ -3,127 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
-    <script src="https://kit.fontawesome.com/3958de1c16.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script src="https://kit.fontawesome.com/32e11bc5c5.js" crossorigin="anonymous"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         body {
-            text-align: center;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #F2F2F2;
-            border-bottom: 1px solid #A8A8AB;
-            padding: 10px 0;
-            
-        }
-
-        
-        footer {
-            padding: 10px 0;
-        }
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-        .flex-item {
-            border: 1px solid #A8A8AB;
-            padding: 20px;
-            margin: 20px;
-        }
-        .flex-item a {
-            text-decoration: none;
-            color: #A8A8AB;
-        }
-        input[type="text"], input[type="email"], input[type="password"], select {
-            width: 414px;
-            height: 54px;
-            margin-bottom: 10px;
-            border: 1px solid #A8A8AB;
-            padding: 10px;
-        }
-        input[type="submit"] {
-            width: 414px;
-            height: 54px;
-            background-color: #0077ED;
-            color: #FFFFFF;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            transition: all 0.3s ease;
-        }
-        input[type="submit"]:hover {
-            transform: scale(1.05);
-        }
-        #firstName, #lastName {
-            width: 190px;
-        }
-        input:focus, select:focus {
-            border: 2px solid #0077ED;
-            outline: none;
-        }
-        select option {
-            background-color: #FFFFFF;
-            color: #000000;
-        }
-
-        input[type="number"] {
-    width: 414px;
-    height: 54px;
-    margin-bottom: 10px;
-    border: 1px solid #A8A8AB;
-    padding: 10px;
-}
     </style>
 </head>
 <body>
-    <header> 
-        <div class="flex-item">
-            <button><i class="fab fa-apple"></i></button><br>
-            <button><a href="" class="menu-link">스토어</a></button><br>
-            <button><a href="" class="menu-link">Mac</a></button><br>
-            <button><a href="" class="menu-link">iPad</a></button><br>
-            <button><a href="" class="menu-link">iPhone</a></button><br>
-            <button><a href="" class="menu-link">Watch</a></button><br>
-            <button><a href="" class="menu-link">AirPods</a></button><br>
-            <button><a href="" class="menu-link">악세사리</a></button><br>
-            <button><a href="" class="menu-link">고객지원</a></button><br>
-            <button><i class="fas fa-search"></i></button><br>
-        </div>
-    </header>
-
-    <section>
-        <form action="http://localhost/method.php">
-            <div class="flex-container">
-                <div class="flex-item">
-                    <h2>Apple ID</h2>
-                    <p><a href="#" class="menu-link">로그인</a></p>
-                    <p><a href="#" class="menu-link">Apple ID 생성</a></p>
-                    <p><a href="#" class="menu-link">FAQ</a></p>
-                    <h2>Apple ID 생성</h2>
-                    <p>하나의 Apple ID로 모든 Apple 서비스를 이용할 수 있습니다.</p>
-                    <input type="text" name="firstName" id="firstName" required placeholder="성"><br>
-                    <input type="text" name="lastName" id="lastName" required  placeholder="이름"><br>
-                    <select name="countryCode" id="countryCode">
-                        <option value="" selected>대한민국 +82</option>
-                        <option value="">미국 +1</option>
-                    </select><br>
-                    <input type="number" name="phoneNumber" id="phoneNumber" required placeholder="전화번호"><br>
-                    <input type="email" name="email" id="email" placeholder="name@example.com"><br>
-                    <input type="password" name="password" id="password" placeholder="암호"><br>
-                    번호확인 방법 <input type="radio" name="how" id=""> 문자 메시지 <input type="radio" name="how" id=""> 음성메시지<br>
-                    <input type="checkbox" name="" id=""> 광고수신동의<br>
-                    <input type="checkbox" name="" id=""> 개인정보수집동의<br>
-                    <input type="submit" value="가입하기"><br>
-                    
-                </div>
+    <header>
+        <div class="top">
+            <button class="btn1"><i class="fa-brands fa-apple"></i></button>
+            <button class="btn1">스토어</button>
+            <button class="btn1">Mac</button>
+            <button class="btn1">iPad</button>
+            <button class="btn1">iPhone</button>
+            <button class="btn1">Watch</button>
+            <button class="btn1">Airpad</button>
+            <button class="btn1">악세사리</button>
+            <button class="btn1">고객지원</button>
+            <button class="btn1"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> 
+        <nav>
+            <div class="nav1">Apple ID</div>
+            <div class="nav2">
+                <button class="btn2">로그인</button>
+                <button class="btn2">Apple ID 생성</button>
+                <button class="btn2">FAQ</button>
             </div>
-        </form>
+        </nav> 
+        <hr>   
+    </header>
+    <section>
+        <div class="middle">
+            <div class="text1">Apple ID 생성</div>
+            <div class="text2">하나의 Apple 모든 Apple 서비스를 이용할 수 있습니다.</div>
+            <div class="name">
+                <input id="FN" type="text" placeholder="First Name" required /> 
+                <input id="LN" type="text" placeholder="Last Name" required /> 
+            </div>  
+            <label for="nation"></label>
+            <select name="nationality" id="nation" required>
+                <option value="Korea">대한민국 +82</option>
+                <option value="USA">미국 +1</option>
+                <option value="JAPAN">일본 +81</option>
+                <option value="CHINA">중국 +86</option>
+            </select>
+            <input id="tel" type="tel" placeholder="telephone" required /> 
+            <input id="BD" type="date" placeholder="Birth Date" required /> 
+            <input id="E" type="email" placeholder="e-mail" required /> 
+            <input id="P" type="password" placeholder="Password" required/> 
+        </div>
+        <div class="middle2">
+            <div>번호 확인 방법 </div>
+            <input type="radio" name="check" id="1" required />
+            <label for="1">문자메세지</label>
+            <input type="radio" name="check" id="2" required />
+            <label for="2">음성메세지</label>
+        </div>
+        <div class="middle3">
+            <div>
+                <input type="checkbox" id="c-admit" required />
+                <label for="c-admit">광고수신 동의</label>
+            </div>
+            <div>
+                <input type="checkbox" id="i-admit" required />
+                <label for="i-admit">개인정보 수집 동의</label>
+            </div>
+            <input type="submit" class="submitB" value="가입하기" />
+        </div>
     </section>
-
     <footer>
-        <a href="./Homework_02.html">이전 페이지</a>
+        <a href="main.html">이전 페이지</a>
     </footer>
 </body>
 </html>
