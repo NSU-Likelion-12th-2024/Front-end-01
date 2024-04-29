@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script src="https://kit.fontawesome.com/3958de1c16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <button class="header-btn"><i class="fa-brands fa-apple"></i></button>
+            <button class="header-btn">스토어</button>
+            <button class="header-btn">Mac</button>
+            <button class="header-btn">iPad</button>
+            <button class="header-btn">iPhone</button>
+            <button class="header-btn">Watch</button>
+            <button class="header-btn">Airpad</button>
+            <button class="header-btn">악세사리</button>
+            <button class="header-btn">고객지원</button>
+            <button class="header-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> 
+        <nav>
+            <div class="nav-main">Apple ID</div>
+            <div class="nav-sub">
+                <button class="nav-btn">로그인</button>
+                <button class="nav-btn">Apple ID 생성</button>
+                <button class="nav-btn">FAQ</button>
+            </div>
+        </nav> 
+        <hr>   
+    </header>
+    <section>
+        <div class="signup-form">
+            <div class="form-title">Apple ID 생성</div>
+            <div class="form-desc">하나의 Apple 모든 Apple 서비스를 이용할 수 있습니다.</div>
+            <div class="name">
+                <input id="first-name" type="text" placeholder="First Name" required /> 
+                <input id="last-name" type="text" placeholder="Last Name" required /> 
+            </div>  
+            <label for="nationality"></label>
+            <select name="nationality" id="nationality" required>
+                <option value="Korea">대한민국 +82</option>
+                <option value="USA">미국 +1</option>
+            </select>
+            <input id="telephone" type="tel" placeholder="Telephone" required /> 
+            <input id="birth-date" type="date" placeholder="Birth Date" required /> 
+            <input id="email" type="email" placeholder="E-mail" required /> 
+            <input id="password" type="password" placeholder="Password" required/> 
+        </div>
+        <div class="verification-method">
+            <div>번호 확인 방법 </div>
+            <input type="radio" name="verification" id="sms" required />
+            <label for="sms">문자메세지</label>
+            <input type="radio" name="verification" id="voice" required />
+            <label for="voice">음성메세지</label>
+        </div>
+        <div class="agreement">
+            <div>
+                <input type="checkbox" id="ad-agree" required />
+                <label for="ad-agree">광고수신 동의</label>
+            </div>
+            <div>
+                <input type="checkbox" id="info-agree" required />
+                <label for="info-agree">개인정보 수집 동의</label>
+            </div>
+            <input type="submit" class="submit-btn" value="가입하기" />
+        </div>
+    </section>
+    <footer>
+        <a href="main.html">이전 페이지</a>
+    </footer>
+</body>
+</html>
