@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>끝말 잇기</title>
+</head>
+
+<body>
+  <div><span id="order">1</span>번째 참가자</div>
+  <input id="input" type="text" placeholder="단어를 입력하세요">
+  <button id="button">입력</button>
+  <span id="word"></span>
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let number = parseInt(prompt("몇 명이서 참가하시나요?")); 
+    const order = document.querySelector("#order");
+    const word = document.querySelector("#word");
+    const input = document.querySelector("#input");
+    const button = document.querySelector("#button");
+    let i = 1;
+    const regex = /^[ㄱ-ㅎ|가-힣]+$/;
+    let words = [];
+
+    while (isNaN(number)) {
+      number = parseInt(prompt("숫자를 입력하세요"));
+    }
+
+    button.addEventListener("click", () => {
+      let orderValue = Number(order.textContent);
+      let inputWord = document.getElementById("input").value;
+      if (orderValue == number) {
+        order.textContent = "1";
+      } else {
+        order.textContent = orderValue + 1;
+      }
+      if (regex.test(inputWord) == false) {
+        alert("단어를 다시 입력하세요" + i++ + "/ 3");
+        input.value = "";
+        if (i > 3) {
+          alert("값을 잘못 입력하셨습니다. 게임이 끝났습니다.");
+        }
+      } else {
+        let wordsLength = words.length;
+        if (wordsLength == 0) {
+          word.append(inputWord + " - ");
+          words.push(inputWord);
+        } else {
+          let preWord = words[words.length - 1];
+          if (preWord.substr(-1) == inputWord.substr(0, 1)) {
+            word.append(inputWord + " - ");
+            words.push(inputWord);
+          } else {
+            alert("단어를 잘못 입력하셨습니다. 게임이 끝났습니다");
+          }
+        }
+        input.value = "";
+      }
+    });
+  });
+</script>
+
+</html>
