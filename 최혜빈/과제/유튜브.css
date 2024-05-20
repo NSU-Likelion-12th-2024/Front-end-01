@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+
+  background-color: white;
+  color: black;
+}
+.logo {
+  font-size: large;
+  color: black;
+}
+
+.logo i {
+  color: red;
+}
+.icon .fa-search {
+  margin-right: 12px;
+}
+
+.player {
+  /* width: 900px;
+  height: 600px; */
+  background-color: black;
+}
+.player video {
+  /* width: 900px;
+  height: 600px; */
+  background-color: black;
+}
+
+.info {
+  padding: 12px;
+}
+.hashtag {
+  display: flex;
+  font-size: small;
+  color: blue;
+}
+.hashtag li {
+  margin-right: 30px;
+}
+
+.titleAndbutton {
+  display: flex;
+}
+.titleAndbutton .maintitle {
+  font-size: 25px;
+  margin-right: 12px;
+}
+.moreBtn {
+  height: 100%;
+}
+.view {
+  font-size: small;
+  color: darkgray;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 0;
+}
+.action button {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+.action button i {
+  margin: 0 auto;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.channel .metadata {
+  display: flex;
+  align-items: center;
+}
+.channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+.channel .metadata img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.channel .metadata .info .name {
+  font-size: medium;
+}
+.channel .metadata .info .subscribers {
+  font-size: small;
+  color: darkgray;
+}
+.channel .subscribe {
+  color: red;
+  font-size: medium;
+}
+
+.upNext {
+  padding: 0 12px;
+}
+.upNext .title {
+  font-size: medium;
+  margin-bottom: 6px;
+}
+.upNext .item {
+  display: flex;
+  margin-top: 12px;
+}
+.upNext .item .img {
+  margin-right: 12px;
+}
