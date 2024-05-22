@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const screen = document.querySelector("#screen");
   const result = document.querySelector("#result");
 
-  let startTime; // 시작 시간
-  let endTime; // 끝나는 시간
-  let responseTime; // 측정 시간
-  let records = []; // 평균 반응 속도 구할 빈 배열
-  let timeoutId; // setTimeout 함수를 담을 변수
+  let startTime;
+  let endTime;
+  let responseTime;
+  let records = [];
+  let timeoutId;
 
   screen.addEventListener("click", () => {
     if (screen.classList.contains("waiting")) {
@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
       screen.classList.replace("ready", "waiting");
     } else if (screen.classList.contains("now")) {
       endTime = new Date();
-      responseTime = endTime - startTime; // 측정 시간
+      responseTime = endTime - startTime;
       records.push(responseTime);
       let Avg =
         records.reduce((acc, cur) => {
           return acc + cur;
-        }, 0) / records.length; // 평균 반응 속도
+        }, 0) / records.length;
       result.textContent =
         "현재: " + responseTime + "ms, " + "평균: " + Avg + "ms";
       screen.classList.replace("now", "waiting");
