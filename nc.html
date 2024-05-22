@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버</title>
+    <script type="module" src="nc.js" defer></script>
+    <link rel="stylesheet" href="nc.css">
+    <script src="https://kit.fontawesome.com/3958de1c16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <form method="post" action="" >
+                <div id="input-id" class="input-container">
+                    <i class="fa-regular fa-user icon-id"></i>
+                    <input type="text" placeholder="아이디를 입력하세요." id="input-id-field" class="input-field">
+                </div>
+
+                <div id="input-pass" class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="비밀번호를 입력하세요." id="input-pass-field" class="input-field">
+                    <i class="fa-regular fa-eye-slash toggle-visibility"></i>
+                </div>
+
+                <div id="input-email" class="input-container">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="이메일을 입력하세요." id="input-email-field" class="input-field">
+                </div>
+            <ul id="form-hints" class="form-hints"></ul>
+                <div id="selection" class="selection-container">
+                    <div class="radio-group">
+                        <input type="radio" name="gender" class="radio-btn" id="male-option">
+                        <label for="male-option"><div class="radio-subgroup left-subgroup">남자</div></label>
+                        <input type="radio" name="gender" class="radio-btn" id="female-option">
+                        <label for="female-option"> <div class="radio-subgroup right-subgroup">여자</div> </label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="country" class="radio-btn" id="korean">
+                        <label for="korean"> <div class="radio-subgroup left-subgroup">내국인</div></label>
+                        <input type="radio" name="country" class="radio-btn" id="foreigne">
+                        <label for="foreigne">  <div class="radio-subgroup right-subgroup">외국인</div></label>
+                    </div>
+                </div>
+            <button type="submit" class="submit-btn">회원가입</button>
+        </form>
+</body>
+</html>
