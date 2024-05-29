@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/384e65c0ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./naver.js" defer></script>
+    <link rel="stylesheet" href="./naver.css" />
+    <title>Naver</title>
+  </head>
+  <body>
+    <div id="form_id">
+      <i class="fa-solid fa-user"></i>
+      <input type="text" id="form_id_input" placeholder="아이디" />
+      <span class="form_id_email">@naver.com</span>
+    </div>
+
+    <div id="form_pass">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" id="form_pass_input" placeholder="비밀번호" />
+      <i class="fa-regular fa-eye-slash eyeIcon"></i>
+    </div>
+
+    <div id="form_email">
+      <i class="fa-solid fa-envelope"></i>
+      <input
+        type="text"
+        id="form_email_input"
+        placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)"
+      />
+    </div>
+
+    <ul id="form_ul1"></ul>
+    <ul id="form_ul2"></ul>
+    <ul id="form_ul3"></ul>
+
+    <div class="select">
+      <div class="select1">
+        <div class="left1">
+          <input type="radio" name="gender" id="male" />
+          <div class="g_m">
+            <label for="gender">남성</label>
+          </div>
+        </div>
+        <div class="left2">
+          <input type="radio" name="gender" id="female" />
+          <div class="g_f">
+            <label for="gender">여성</label>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="select2">
+        <div class="right1">
+          <input type="radio" name="nation" id="native" />
+          <div class="n_n">
+            <label for="nation">내국인</label>
+          </div>
+        </div>
+        <div class="right2">
+          <input type="radio" name="nation" id="n_native" />
+          <div class="n_n_n">
+            <label for="nation">외국인</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
